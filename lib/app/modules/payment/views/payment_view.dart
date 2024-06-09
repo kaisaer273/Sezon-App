@@ -10,10 +10,12 @@ import 'package:sezon_app/app/routes/app_pages.dart';
 import 'package:sezon_app/utils/colors.dart';
 
 class PaymentView extends GetView<PaymentController> {
+  const PaymentView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PaymentAppBar(),
+      appBar: const PaymentAppBar(),
       body: Column(
         children: [
           Expanded(
@@ -28,8 +30,8 @@ class PaymentView extends GetView<PaymentController> {
                   elevation: 2,
                   child: ListTile(
                     onTap: () =>
-                        controller.bottomSheet(context, AddNewAddress()),
-                    leading: Icon(
+                        controller.bottomSheet(context, const AddNewAddress()),
+                    leading: const Icon(
                       Icons.location_on,
                       color: Colors.black,
                       size: 30,
@@ -42,7 +44,7 @@ class PaymentView extends GetView<PaymentController> {
                         color: Colors.black,
                       ),
                     ),
-                    trailing: Icon(Icons.arrow_forward_ios),
+                    trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
                 SizedBox(height: 10.h),
@@ -51,7 +53,7 @@ class PaymentView extends GetView<PaymentController> {
                   child: ListTile(
                     onTap: () => controller.bottomSheet(
                         context, PickPayment(controller: controller)),
-                    leading: Icon(
+                    leading: const Icon(
                       Icons.credit_card,
                       color: Colors.black,
                       size: 30,
@@ -64,7 +66,7 @@ class PaymentView extends GetView<PaymentController> {
                         color: Colors.black,
                       ),
                     ),
-                    trailing: Icon(Icons.arrow_forward_ios),
+                    trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
                 SizedBox(height: 10.h),
@@ -73,7 +75,7 @@ class PaymentView extends GetView<PaymentController> {
                   child: ListTile(
                     onTap: () => controller.bottomSheet(
                         context, AddSpec(controller: controller)),
-                    leading: Icon(
+                    leading: const Icon(
                       Icons.redeem,
                       color: Colors.black,
                       size: 30,
@@ -86,7 +88,7 @@ class PaymentView extends GetView<PaymentController> {
                         color: Colors.black,
                       ),
                     ),
-                    trailing: Icon(Icons.arrow_forward_ios),
+                    trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
               ],
@@ -96,11 +98,11 @@ class PaymentView extends GetView<PaymentController> {
             padding: EdgeInsets.all(20.r),
             child: ElevatedButton(
               onPressed: () => Get.toNamed(AppPages.PAYMENT_CONFIRMATION),
-              child: Text('تأكيد الطلب'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.customRed,
                 minimumSize: Size(double.infinity, 50.h),
               ),
+              child: const Text('تأكيد الطلب'),
             ),
           ),
         ],

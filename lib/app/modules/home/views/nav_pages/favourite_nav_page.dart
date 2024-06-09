@@ -4,6 +4,8 @@ import 'package:sezon_app/app/modules/home/controllers/favourite_controller.dart
 import 'package:sezon_app/app/modules/home/views/widgets/favourite_items.dart';
 
 class FavouriteNavPage extends GetView<FavouriteController> {
+  const FavouriteNavPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return FavouriteItems(controller: controller);

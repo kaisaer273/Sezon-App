@@ -7,7 +7,7 @@ import 'package:sezon_app/app/modules/login/views/widgets/auth_background.dart';
 import 'package:sezon_app/config/translations/strings_enum.dart';
 
 class LoginView extends GetView<LoginController> {
-  const LoginView({Key? key}) : super(key: key);
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class LoginView extends GetView<LoginController> {
                   onPressed: () {},
                   child: Text(
                     Strings.forgetPassword.tr,
-                    style: TextStyle(color: Colors.black, fontSize: 18),
+                    style: const TextStyle(color: Colors.black, fontSize: 18),
                   ),
                 ),
               ),
@@ -53,7 +53,7 @@ class LoginView extends GetView<LoginController> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(340.h, 50.w),
-                backgroundColor: Color(0xffD92728),
+                backgroundColor: const Color(0xffD92728),
               ),
               onPressed: () => controller.signIn(
                 controller.nameController.text,
@@ -76,7 +76,7 @@ class LoginView extends GetView<LoginController> {
                   TextSpan(
                     recognizer: controller.tapGestureRecognizer,
                     text: Strings.newAccount.tr,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Color(0xffD92728),
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,

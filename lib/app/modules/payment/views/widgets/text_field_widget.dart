@@ -33,13 +33,13 @@ class PaymentTextField extends StatelessWidget {
           color: Colors.grey,
         ),
         hintText: hint,
-        hintStyle: TextStyle(color: Colors.grey),
+        hintStyle: const TextStyle(color: Colors.grey),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(5.r),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(5.r),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: AppColors.customRed,
             width: 1.5,
           ),

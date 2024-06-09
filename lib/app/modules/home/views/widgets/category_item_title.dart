@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CategoryItemTitle extends StatelessWidget {
-  CategoryItemTitle({
+  const CategoryItemTitle({
     super.key,
     required this.categoryTitle,
   });
@@ -24,7 +24,7 @@ class CategoryItemTitle extends StatelessWidget {
         SizedBox(width: 10.w),
         Text(
           categoryTitle,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),

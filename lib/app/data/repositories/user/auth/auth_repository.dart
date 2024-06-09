@@ -118,7 +118,7 @@ class AuthRepository {
   Future<String?> getMobileNumber() async {
     try {
       String? uid = FirebaseAuth.instance.currentUser?.uid;
-      Logger().w('UID ${uid}');
+      Logger().w('UID $uid');
       if (uid != null) {
         DocumentReference userDocRef =
         FirebaseFirestore.instance.collection('users').doc(uid);
@@ -147,7 +147,7 @@ class AuthRepository {
       phoneNumber: await getMobileNumber(),
       verificationCompleted: (phoneAuthCredential) async {
         isLoading.value = false;
-        Logger().w('phoneAuthCredential ${phoneAuthCredential}');
+        Logger().w('phoneAuthCredential $phoneAuthCredential');
       },
       verificationFailed: (error) {
         isLoading.value = false;
@@ -156,11 +156,11 @@ class AuthRepository {
       codeSent: (verificationId, forceResendingToken) {
         isLoading.value = false;
         verifyId = verificationId;
-        Logger().w('verificationId ${verificationId}');
-        Logger().w('verifyId ${verifyId}');
+        Logger().w('verificationId $verificationId');
+        Logger().w('verifyId $verifyId');
       },
       codeAutoRetrievalTimeout: (verificationId) {
-        Logger().w('verificationId ${verificationId}');
+        Logger().w('verificationId $verificationId');
       },
     );
   }

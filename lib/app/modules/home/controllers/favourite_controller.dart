@@ -26,9 +26,9 @@ class FavouriteController extends GetxController {
     }
   }
 
-  void removeFavouriteItem(String product_name) {
+  void removeFavouriteItem(String productName) {
     final indexToRemove =
-    favouriteItems.indexWhere((item) => item.product_name == product_name);
+    favouriteItems.indexWhere((item) => item.product_name == productName);
 
     if (indexToRemove != -1) {
       favouriteItems.removeAt(indexToRemove);

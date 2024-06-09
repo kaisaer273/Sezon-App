@@ -42,14 +42,13 @@ class PickPayment extends StatelessWidget {
           PaymentMethods(controller: controller),
           SizedBox(height: 30.h),
           ElevatedButton(
-            child: Text('التالي'),
             onPressed: () {
               Get.back();
               showModalBottomSheet(
                 showDragHandle: true,
                 isScrollControlled: true,
                 context: context,
-                builder: (context) => CardInfo(),
+                builder: (context) => const CardInfo(),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
@@ -58,6 +57,7 @@ class PickPayment extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.customRed,
             ),
+            child: const Text('التالي'),
           ),
         ],
       ),

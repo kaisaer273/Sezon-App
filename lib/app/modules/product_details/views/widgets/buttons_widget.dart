@@ -27,14 +27,14 @@ class ButtonsWidget extends StatelessWidget {
             Expanded(
               child: ElevatedButton(
                 onPressed: () => controller.addProductToCart(),
-                child: Text(
-                  'إضافة إلى سلة الطلبات',
-                  style: TextStyle(color: AppColors.customRed),
-                ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
                   minimumSize: Size(155.w, 45.h),
-                  shape: RoundedRectangleBorder(side: BorderSide.none),
+                  shape: const RoundedRectangleBorder(side: BorderSide.none),
+                ),
+                child: const Text(
+                  'إضافة إلى سلة الطلبات',
+                  style: TextStyle(color: AppColors.customRed),
                 ),
               ),
             ),
@@ -43,7 +43,6 @@ class ButtonsWidget extends StatelessWidget {
                 onPressed: () {
                   Get.toNamed(AppPages.PAYMENT);
                 },
-                child: Text('شراء الان'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.customRed,
                   minimumSize: Size(160.w, 45.h),
@@ -54,6 +53,7 @@ class ButtonsWidget extends StatelessWidget {
                     ),
                   ),
                 ),
+                child: const Text('شراء الان'),
               ),
             ),
           ],

@@ -64,7 +64,7 @@ class ProfileImage extends StatelessWidget {
           ),
           child: InkWell(
             onTap: () => controller.selectPicture(),
-            child: Icon(
+            child: const Icon(
               Icons.camera_alt,
               color: AppColors.customRed,
               size: 28,

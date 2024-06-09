@@ -1,34 +1,77 @@
 {
   "project_info": {
-    "project_number": "485923650572",
-    "project_id": "sezon-app-1bb64",
-    "storage_bucket": "sezon-app-1bb64.appspot.com"
+    "project_number": "133888042850",
+    "project_id": "k9nix-kaisaer",
+    "storage_bucket": "k9nix-kaisaer.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:485923650572:android:9fdf4bf07873ddc0264229",
+        "mobilesdk_app_id": "1:133888042850:android:46b74905e1d5aab8ba2e3b",
         "android_client_info": {
-          "package_name": "com.wasem.sezon_app"
+          "package_name": "com.kaisaer.k9nix"
         }
       },
       "oauth_client": [
         {
-          "client_id": "485923650572-43d62f0oi7d55uu6uf84plaqn1cv21hc.apps.googleusercontent.com",
+          "client_id": "133888042850-sd4583paocphr1rbuga6qbg60iplnos0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyALXb9X1qujUNMo8_bwWKxSCCya_48P7AU"
+          "current_key": "AIzaSyAkUuMqiP_cHcTfT-VDG5zwzjkr03h0Jw4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "485923650572-43d62f0oi7d55uu6uf84plaqn1cv21hc.apps.googleusercontent.com",
+              "client_id": "133888042850-sd4583paocphr1rbuga6qbg60iplnos0.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "133888042850-17gnt6g0nfk0udpi4f7uh4pd141v5f5u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kaisaer.k9nix"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133888042850:android:669ced34a6ec17a6ba2e3b",
+        "android_client_info": {
+          "package_name": "com.wasem.sezon_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133888042850-sd4583paocphr1rbuga6qbg60iplnos0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkUuMqiP_cHcTfT-VDG5zwzjkr03h0Jw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133888042850-sd4583paocphr1rbuga6qbg60iplnos0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "133888042850-17gnt6g0nfk0udpi4f7uh4pd141v5f5u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kaisaer.k9nix"
+              }
             }
           ]
         }

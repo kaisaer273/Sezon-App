@@ -12,7 +12,7 @@ class AddNewAddress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(20.0),
       child: ListView(
         shrinkWrap: true,
         children: [
@@ -34,43 +34,43 @@ class AddNewAddress extends StatelessWidget {
             ],
           ),
           SizedBox(height: 30.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'الدولة',
             hint: 'الامارات',
           ),
           SizedBox(height: 30.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'المنطقة',
             hint: 'المنطقة، المحافظة، ولاية...',
           ),
           SizedBox(height: 30.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'المدينة',
             hint: 'الشيخ زايد',
           ),
           SizedBox(height: 30.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'الشارع',
             hint: 'الشارع، المنزل، الوحدة السكنية...',
           ),
           SizedBox(height: 30.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'الرمز البريدي',
             hint: '872',
             keyboardType: TextInputType.number,
           ),
           SizedBox(height: 30.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'رقم الهاتف',
             hint: '972592463727+',
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           ElevatedButton(
             onPressed: () => Get.back(),
-            child: Text('حفظ'),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.customRed,
             ),
+            child: const Text('حفظ'),
           ),
         ],
       ),

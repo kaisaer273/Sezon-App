@@ -7,7 +7,7 @@ import 'package:sezon_app/app/modules/register/controllers/register_controller.d
 import 'package:sezon_app/config/translations/strings_enum.dart';
 
 class RegisterView extends GetView<RegisterController> {
-  const RegisterView({Key? key}) : super(key: key);
+  const RegisterView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,7 @@ class RegisterView extends GetView<RegisterController> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(340.h, 50.w),
-                backgroundColor: Color(0xffD92728),
+                backgroundColor: const Color(0xffD92728),
               ),
               onPressed: () {
                 controller.registerWithUsernameAndPassword(
@@ -87,7 +87,7 @@ class RegisterView extends GetView<RegisterController> {
                   TextSpan(
                     recognizer: controller.tapGestureRecognizer,
                     text: Strings.login.tr,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Color(0xffD92728),
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,

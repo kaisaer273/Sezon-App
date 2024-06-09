@@ -12,7 +12,7 @@ class CardInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(20.0),
       child: ListView(
         shrinkWrap: true,
         children: [
@@ -34,26 +34,26 @@ class CardInfo extends StatelessWidget {
             ],
           ),
           SizedBox(height: 40.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'الاسم في البطاقة',
             hint: 'وسيم الجندي',
           ),
           SizedBox(height: 40.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'رقم البطاقة',
             hint: '4523 8951 6314 8952',
           ),
           SizedBox(height: 40.h),
           Row(
             children: [
-              Expanded(
+              const Expanded(
                 child: PaymentTextField(
                   labelText: 'تاريخ الانتهاء',
                   hint: '25/7',
                 ),
               ),
               SizedBox(width: 10.h),
-              Expanded(
+              const Expanded(
                 child: PaymentTextField(
                   labelText: 'رمز cvv',
                   hint: '0000',
@@ -64,10 +64,10 @@ class CardInfo extends StatelessWidget {
           SizedBox(height: 40.h),
           ElevatedButton(
             onPressed: () => Get.back(),
-            child: Text('حفظ'),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.customRed,
             ),
+            child: const Text('حفظ'),
           ),
         ],
       ),

@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 class CartItem {
   late String product_name;
   late String product_description;
@@ -7,7 +9,6 @@ class CartItem {
   late bool is_favourite;
 
   CartItem();
-
 
   CartItem.fromMap(Map<String, dynamic> documentMap) {
     product_name = documentMap['product_name'];
@@ -19,7 +20,7 @@ class CartItem {
   }
 
   Map<String, dynamic> toMap() {
-    Map<String, dynamic> map = <String, dynamic> {};
+    Map<String, dynamic> map = <String, dynamic>{};
     map['product_name'] = product_name;
     map['product_description'] = product_description;
     map['product_price'] = product_price;

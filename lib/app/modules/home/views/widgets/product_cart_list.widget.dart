@@ -21,7 +21,7 @@ class ProductCartList extends GetView<ShoppingController> {
           itemBuilder: (context, index) {
             return Slidable(
               endActionPane: ActionPane(
-                motion: StretchMotion(),
+                motion: const StretchMotion(),
                 extentRatio: 0.5,
                 children: [
                   SlidableAction(

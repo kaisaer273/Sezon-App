@@ -31,9 +31,9 @@ class ShoppingController extends GetxController {
     }
   }
 
-  void removeCartItem(String product_name) {
+  void removeCartItem(String productName) {
     final indexToRemove =
-        cartItems.indexWhere((item) => item.product_name == product_name);
+        cartItems.indexWhere((item) => item.product_name == productName);
 
     if (indexToRemove != -1) {
       cartItems.removeAt(indexToRemove);

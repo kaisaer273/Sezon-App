@@ -6,18 +6,20 @@ import 'package:sezon_app/app/modules/home/views/widgets/product_cart_list.widge
 import 'package:sezon_app/utils/colors.dart';
 
 class ShoppingNavPage extends GetView<ShoppingController> {
+  const ShoppingNavPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
       child: Column(
         children: [
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           TabBar(
             labelStyle: TextStyle(fontSize: 17.sp, fontWeight: FontWeight.bold),
             indicatorColor: AppColors.customRed,
             onTap: (index) => controller.changeTabIndex(index),
-            tabs: [
+            tabs: const [
               Tab(
                 text: 'طلبات قيد التنفيذ',
               ),
@@ -31,7 +33,7 @@ class ShoppingNavPage extends GetView<ShoppingController> {
               () => IndexedStack(
                 index: controller.selectedIndex.value,
                 children: [
-                  ProductCartList(),
+                  const ProductCartList(),
                   Center(
                     child: Text(
                       'لا توجد طلبات تم تسليمها 🥲',

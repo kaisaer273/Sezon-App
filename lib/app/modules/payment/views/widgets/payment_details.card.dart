@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sezon_app/utils/colors.dart';
 
 class PaymentDetailsCard extends StatelessWidget {
-  PaymentDetailsCard({
-    Key? key,
+  const PaymentDetailsCard({
+    super.key,
     required this.title,
     required this.leadingIcon,
     this.fontSize = 14.0,
@@ -29,12 +29,13 @@ class PaymentDetailsCard extends StatelessWidget {
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
-            fontSize: fontSize.sp, // Use fontSize.sp to convert it to screen util
+            fontSize:
+                fontSize.sp, // Use fontSize.sp to convert it to screen util
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
         ),
-        trailing: Icon(
+        trailing: const Icon(
           Icons.edit_note,
           size: 32,
           color: AppColors.customRed,

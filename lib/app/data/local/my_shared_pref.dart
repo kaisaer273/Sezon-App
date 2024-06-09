@@ -11,7 +11,7 @@ class MySharedPref {
   static const String _fcmTokenKey = 'fcm_token';
   static const String _currentLocalKey = 'current_local';
   static const String _lightThemeKey = 'is_theme_light';
-  static const String _hashedPassword = 'HASHED_PASSWORD';
+  //static const String _hashedPassword = 'HASHED_PASSWORD';
 
   static Future<void> init() async {
     _sharedPreferences = await SharedPreferences.getInstance();

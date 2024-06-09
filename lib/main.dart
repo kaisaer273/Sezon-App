@@ -36,12 +36,13 @@ class MyApp extends StatelessWidget {
           title: "Sezon App",
           useInheritedMediaQuery: true,
           debugShowCheckedModeBanner: false,
-          builder: (context,widget) {
+          builder: (context, widget) {
             bool themeIsLight = MySharedPref.getThemeIsLight();
             return Theme(
               data: MyTheme.getThemeData(isLight: themeIsLight),
               child: MediaQuery(
-                data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+                data: MediaQuery.of(context)
+                    .copyWith(textScaler: const TextScaler.linear(1.0)),
                 child: widget!,
               ),
             );
@@ -55,4 +56,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

@@ -13,14 +13,14 @@ import 'package:sezon_app/app/routes/app_pages.dart';
 import 'package:sezon_app/utils/colors.dart';
 
 class MainView extends GetView<MainNavController> {
-  const MainView({Key? key}) : super(key: key);
+  const MainView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
         title: Padding(
-          padding: EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.only(top: 10),
           child: Obx(
             () => Text(
               controller.homeController.changeTabTitle(),
@@ -35,7 +35,7 @@ class MainView extends GetView<MainNavController> {
         leadingWidget: LogoutAvatar(controller: controller),
         trailingWidget: IconButton(
           onPressed: () => Get.toNamed(AppPages.NOTIFICATION),
-          icon: Icon(
+          icon: const Icon(
             Icons.notifications,
             color: Colors.grey,
             size: 28,
@@ -46,7 +46,7 @@ class MainView extends GetView<MainNavController> {
       body: Obx(
         () => IndexedStack(
           index: controller.homeController.tabIndex.value,
-          children: [
+          children: const [
             HomeNavPage(),
             CategoryNavPage(),
             ShoppingNavPage(),
@@ -56,12 +56,12 @@ class MainView extends GetView<MainNavController> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Get.toNamed(Routes.ADMIN_ADD_PRODUCTS),
-        child: Icon(
+        backgroundColor: AppColors.customRed,
+        child: const Icon(
           Icons.add,
           color: Colors.white,
           size: 30,
         ),
-        backgroundColor: AppColors.customRed,
       ),
     );
   }

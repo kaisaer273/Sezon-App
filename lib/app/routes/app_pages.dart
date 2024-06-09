@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:get/get.dart';
 import 'package:sezon_app/app/data/repositories/admin/products/bindings/admin_products.bindings.dart';
 import 'package:sezon_app/app/data/repositories/admin/products/views/admin_products.view.dart';
@@ -39,12 +41,12 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.INITIAL,
-      page: () => LaunchView(),
+      page: () => const LaunchView(),
       binding: LaunchBinding(),
     ),
     GetPage(
       name: _Paths.HOME,
-      page: () =>  MainView(),
+      page: () => const MainView(),
       binding: MainBinding(),
     ),
     GetPage(
@@ -64,32 +66,32 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.PRODUCT_DETAILS,
-      page: () => ProductDetailsView(),
+      page: () => const ProductDetailsView(),
       binding: ProductsDetailsBinding(),
     ),
     GetPage(
       name: _Paths.PAYMENT,
-      page: () => PaymentView(),
+      page: () => const PaymentView(),
       binding: PaymentBindings(),
     ),
     GetPage(
       name: _Paths.PAYMENT_CONFIRMATION,
-      page: () => PaymentConfirmation(),
+      page: () => const PaymentConfirmation(),
       binding: PaymentBindings(),
     ),
     GetPage(
       name: _Paths.NOTIFICATION,
-      page: () => NotificationView(),
+      page: () => const NotificationView(),
       binding: NotificationBindings(),
     ),
     GetPage(
       name: _Paths.USER_PROFILE,
-      page: () => UserProfileView(),
+      page: () => const UserProfileView(),
       binding: UserProfileBinding(),
     ),
     GetPage(
       name: _Paths.ADMIN_ADD_PRODUCTS,
-      page: () => AdminProductsView(),
+      page: () => const AdminProductsView(),
       binding: AdminProductsBindings(),
     ),
   ];

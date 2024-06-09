@@ -5,13 +5,15 @@ import 'package:sezon_app/app/modules/home/views/widgets/category_nav_list.dart'
 import 'package:sezon_app/app/modules/home/views/widgets/category_products.dart';
 
 class CategoryNavPage extends GetView<CategoryController> {
+  const CategoryNavPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Obx(
         () {
           return controller.isLoading.value
-              ? Center(
+              ? const Center(
                   child: CupertinoActivityIndicator(),
                 )
               : Row(

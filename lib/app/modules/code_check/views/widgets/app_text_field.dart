@@ -48,7 +48,7 @@ class AppTextField extends StatelessWidget {
             color: AppColors.customRed,
           ),
         ),
-        hintStyle: TextStyle(color: Colors.grey),
+        hintStyle: const TextStyle(color: Colors.grey),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(5.r),
         ),

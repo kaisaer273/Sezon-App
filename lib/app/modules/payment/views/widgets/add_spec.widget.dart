@@ -16,7 +16,7 @@ class AddSpec extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(20.0),
       child: ListView(
         shrinkWrap: true,
         children: [
@@ -38,32 +38,32 @@ class AddSpec extends StatelessWidget {
             ],
           ),
           SizedBox(height: 40.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'اسم المنتج',
             hint: 'مثال: خزف ملون صنع يدوي',
           ),
           SizedBox(height: 40.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'الكمية',
             hint: 'مثال: 5 قطع',
           ),
           SizedBox(height: 40.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'لون المنتج',
             hint: 'مثال: الأسود',
           ),
           SizedBox(height: 40.h),
-          PaymentTextField(
+          const PaymentTextField(
             labelText: 'الحجم',
             hint: 'مثال: xxl',
           ),
           SizedBox(height: 40.h),
           ElevatedButton(
             onPressed: () => Get.back(),
-            child: Text('حفظ'),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.customRed,
             ),
+            child: const Text('حفظ'),
           ),
         ],
       ),

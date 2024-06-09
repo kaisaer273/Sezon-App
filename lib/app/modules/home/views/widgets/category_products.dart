@@ -24,7 +24,7 @@ class CategoryProducts extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 20.h),
         itemCount: controller.productsList.length,
         shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 12.r,
@@ -54,7 +54,7 @@ class CategoryProducts extends StatelessWidget {
                         color: Colors.white,
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadius.circular(8),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 4,
                             color: Color(0x3600000F),
@@ -88,11 +88,11 @@ class CategoryProducts extends StatelessWidget {
                                   child: Container(
                                     width: 30.w,
                                     height: 30.h,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white30,
                                     ),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.favorite_border,
                                       color: Colors.white60,
                                     ),

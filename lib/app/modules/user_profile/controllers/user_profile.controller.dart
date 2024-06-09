@@ -122,7 +122,7 @@ class UserProfileController extends GetxController {
   Future<void> performUpdate() async {
     if (checkData()) {
       await updateUser();
-      await uploadImage(path: pickedFileRx.value!.path).listen((event) {
+      uploadImage(path: pickedFileRx.value!.path).listen((event) {
         if (event.state == TaskState.error) {
           CustomSnackBar.showCustomSnackBar(
             title: 'حدث خطأ',

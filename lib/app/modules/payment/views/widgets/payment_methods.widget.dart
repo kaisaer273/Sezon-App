@@ -20,7 +20,7 @@ class PaymentMethods extends StatelessWidget {
       itemBuilder: (context, index) {
         return Card(
           elevation: 2,
-          margin: EdgeInsets.symmetric(vertical: 10),
+          margin: const EdgeInsets.symmetric(vertical: 10),
           clipBehavior: Clip.antiAlias,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15.r),

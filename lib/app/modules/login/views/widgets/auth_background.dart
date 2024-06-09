@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sezon_app/generated/assets.dart';
 
 class AuthBackground extends StatelessWidget {
-  AuthBackground({
+  const AuthBackground({
     required this.title,
     super.key,
   });

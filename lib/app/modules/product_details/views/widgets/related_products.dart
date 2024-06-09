@@ -25,7 +25,7 @@ class RelatedProducts extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             elevation: 3,
-            margin: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -49,7 +49,7 @@ class RelatedProducts extends StatelessWidget {
                       child: Container(
                         width: 30.w,
                         height: 30.h,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           color: Colors.white30,
                         ),

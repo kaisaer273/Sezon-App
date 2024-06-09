@@ -16,8 +16,8 @@ class CategoryItemsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(() {
       if (controller.isLoading.value) {
-        return CupertinoActivityIndicator();
-      } else
+        return const CupertinoActivityIndicator();
+      } else {
         return ConstrainedBox(
           constraints: BoxConstraints(
             maxHeight: 100.h,
@@ -60,6 +60,7 @@ class CategoryItemsList extends StatelessWidget {
             },
           ),
         );
+      }
     });
   }
 }

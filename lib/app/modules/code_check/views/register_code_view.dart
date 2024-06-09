@@ -7,7 +7,7 @@ import 'package:sezon_app/app/modules/login/views/widgets/auth_background.dart';
 import 'package:sezon_app/utils/colors.dart';
 
 class RegisterCodeView extends GetView<RegisterCodeController> {
-  const RegisterCodeView({Key? key}) : super(key: key);
+  const RegisterCodeView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class RegisterCodeView extends GetView<RegisterCodeController> {
           body: SingleChildScrollView(
             child: Column(
               children: [
-                AuthBackground(title: 'رمز التحقق'),
+                const AuthBackground(title: 'رمز التحقق'),
                 Text(
                   ' لقد قمنا بارسال رمز التحقق إلى هذا الرقم الخاص بك',
                   textAlign: TextAlign.center,
@@ -61,7 +61,7 @@ class RegisterCodeView extends GetView<RegisterCodeController> {
                     minimumSize: Size(340.h, 50.w),
                     backgroundColor: AppColors.customRed,
                   ),
-                  child: Text('ارسل'),
+                  child: const Text('ارسل'),
                 ),
               ],
             ),

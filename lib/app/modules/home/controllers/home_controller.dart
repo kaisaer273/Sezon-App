@@ -22,8 +22,8 @@ class HomeController extends GetxController {
     tabIndex.value = index;
   }
 
-  void setFavouriteProduct(String product_name) {
-    selectedProduct.value = product_name;
+  void setFavouriteProduct(String productName) {
+    selectedProduct.value = productName;
   }
 
   String changeTabTitle() {
@@ -44,7 +44,7 @@ class HomeController extends GetxController {
       final QuerySnapshot query = await FirebaseFirestore.instance
           .collection('products')
           .where('product_name', isGreaterThanOrEqualTo: keyword)
-          .where('product_name', isLessThanOrEqualTo: keyword + '\uf8ff')
+          .where('product_name', isLessThanOrEqualTo: '$keyword\uf8ff')
           .get();
 
       searchedProducts.value =
@@ -194,8 +194,8 @@ class HomeController extends GetxController {
     }
   }
 
-  void performFavourite(String product_name) async {
-    setFavouriteProduct(product_name);
+  void performFavourite(String productName) async {
+    setFavouriteProduct(productName);
     await fetchProduct();
     addProductToFavourites();
   }

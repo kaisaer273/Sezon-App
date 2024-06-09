@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class ProductAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const ProductAppBar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -19,7 +21,7 @@ class ProductAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       leading: IconButton(
         onPressed: () => Get.back(),
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_back_ios,
           color: Colors.black,
           size: 28,

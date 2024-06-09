@@ -6,6 +6,8 @@ import 'package:sezon_app/generated/assets.dart';
 import 'package:sezon_app/utils/colors.dart';
 
 class NotificationView extends GetView<NotificationController> {
+  const NotificationView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +35,7 @@ class NotificationView extends GetView<NotificationController> {
         actions: [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.w),
-            child: Icon(
+            child: const Icon(
               Icons.notifications,
               color: AppColors.customRed,
               size: 28,

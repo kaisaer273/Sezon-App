@@ -12,16 +12,18 @@ import 'package:sezon_app/app/modules/product_details/views/widgets/related_prod
 import 'package:sezon_app/utils/colors.dart';
 
 class ProductDetailsView extends GetView<ProductDetailsController> {
+  const ProductDetailsView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Obx(() {
       return Scaffold(
-        appBar: ProductAppBar(),
+        appBar: const ProductAppBar(),
         body: controller.isLoading.value
-            ? Center(child: CupertinoActivityIndicator())
+            ? const Center(child: CupertinoActivityIndicator())
             : ListView(
                 padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 children: [
                   ImagesPageView(controller: controller),
                   SizedBox(height: 15.h),
@@ -53,7 +55,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                     ),
                   ),
                   SizedBox(height: 20.h),
-                  HeaderTitle(),
+                  const HeaderTitle(),
                   SizedBox(height: 20.h),
                   RelatedProducts(controller: controller),
                   SizedBox(height: 20.h),

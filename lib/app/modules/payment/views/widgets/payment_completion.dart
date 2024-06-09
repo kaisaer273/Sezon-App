@@ -10,14 +10,16 @@ import 'package:sezon_app/app/modules/stripe_payment/payment_manager.dart';
 import 'package:sezon_app/utils/colors.dart';
 
 class PaymentConfirmation extends GetView<PaymentController> {
+  const PaymentConfirmation({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PaymentAppBar(),
+      appBar: const PaymentAppBar(),
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 20.w),
         children: [
-          PaymentDetailsCard(
+          const PaymentDetailsCard(
             leadingIcon: Icons.location_on,
             title:
                 'الامارات، محافظة الشمال، الشيخ زايد شارع الجامعات، الطابق الثالث، 872 +9720592072429',
@@ -29,7 +31,7 @@ class PaymentConfirmation extends GetView<PaymentController> {
             leadingIcon: Icons.credit_card,
           ),
           SizedBox(height: 20.h),
-          ProductDetailsCard(),
+          const ProductDetailsCard(),
           SizedBox(height: 20.h),
           Text(
             'الملخص',
@@ -39,21 +41,21 @@ class PaymentConfirmation extends GetView<PaymentController> {
             ),
           ),
           SizedBox(height: 10.h),
-          SummaryWidget(title: 'مدة الشحن', subTitle: '5 ايام'),
+          const SummaryWidget(title: 'مدة الشحن', subTitle: '5 ايام'),
           SizedBox(height: 10.h),
-          SummaryWidget(title: 'إجمالي تكلفة المنتج', subTitle: '130ر.س'),
+          const SummaryWidget(title: 'إجمالي تكلفة المنتج', subTitle: '130ر.س'),
           SizedBox(height: 10.h),
-          SummaryWidget(title: 'إجمالي تكلفة الشحن', subTitle: '90ر.س'),
+          const SummaryWidget(title: 'إجمالي تكلفة الشحن', subTitle: '90ر.س'),
           SizedBox(height: 10.h),
-          SummaryWidget(title: 'المجموع الكلي', subTitle: '210ر.س'),
+          const SummaryWidget(title: 'المجموع الكلي', subTitle: '210ر.س'),
           SizedBox(height: 20.h),
           ElevatedButton(
             onPressed: () => PaymentManager.makePayment(100, 'USD'),
-            child: Text('تأكيد الطلب'),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.customRed,
               minimumSize: Size(double.infinity, 50.h),
             ),
+            child: const Text('تأكيد الطلب'),
           ),
         ],
       ),

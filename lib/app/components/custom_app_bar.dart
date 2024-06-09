@@ -9,7 +9,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget title;
   final Widget trailingWidget;
 
-  CustomAppBar({
+  const CustomAppBar({super.key, 
     required this.title,
     this.leadingWidget = const SizedBox.shrink(),
     this.trailingWidget = const SizedBox.shrink(),

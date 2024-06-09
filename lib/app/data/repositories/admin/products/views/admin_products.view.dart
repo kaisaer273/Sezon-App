@@ -5,6 +5,8 @@ import 'package:sezon_app/app/data/repositories/admin/products/controllers/admin
 import 'package:sezon_app/app/data/repositories/admin/products/views/widgets/add_new_product.widget.dart';
 
 class AdminProductsView extends GetView<AdminProductsController> {
+  const AdminProductsView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +23,7 @@ class AdminProductsView extends GetView<AdminProductsController> {
         ),
         leading: IconButton(
           onPressed: () => Get.back(),
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios,
             color: Colors.black,
           ),

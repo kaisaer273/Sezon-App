@@ -17,7 +17,7 @@ class SearchWidget extends StatelessWidget {
     return Column(
       children: [
         SearchBar(
-          elevation: MaterialStatePropertyAll(0),
+          elevation: const MaterialStatePropertyAll(0),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10.r),

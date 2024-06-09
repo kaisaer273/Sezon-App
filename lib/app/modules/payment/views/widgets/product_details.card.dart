@@ -12,7 +12,7 @@ class ProductDetailsCard extends StatelessWidget {
     return Card(
       elevation: 1,
       child: ListTile(
-        leading: Icon(
+        leading: const Icon(
           Icons.redeem,
           color: Colors.black,
           size: 30,
@@ -55,7 +55,7 @@ class ProductDetailsCard extends StatelessWidget {
             ),
           ],
         ),
-        trailing: Icon(
+        trailing: const Icon(
           Icons.edit_note,
           size: 32,
           color: AppColors.customRed,

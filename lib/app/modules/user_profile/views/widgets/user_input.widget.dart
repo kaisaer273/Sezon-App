@@ -58,15 +58,15 @@ class UserInputs extends StatelessWidget {
           SizedBox(height: 30.h),
           ElevatedButton(
             onPressed: () => controller.performUpdate(),
+            style: ElevatedButton.styleFrom(
+              minimumSize: Size(double.infinity, 50.h),
+              backgroundColor: AppColors.customRed,
+            ),
             child: Text(
               'تحديث البيانات',
               style: TextStyle(
                 fontSize: 20.sp,
               ),
-            ),
-            style: ElevatedButton.styleFrom(
-              minimumSize: Size(double.infinity, 50.h),
-              backgroundColor: AppColors.customRed,
             ),
           ),
         ],

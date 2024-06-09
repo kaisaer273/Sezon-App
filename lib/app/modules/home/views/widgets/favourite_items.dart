@@ -76,7 +76,7 @@ class FavouriteItems extends StatelessWidget {
                           controller.removeFavouriteItem(
                             controller.favouriteItems[index].product_name,
                           ),
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.delete,
                         color: AppColors.customRed,
                       ),

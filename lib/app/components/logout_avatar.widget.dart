@@ -28,21 +28,21 @@ class LogoutAvatar extends StatelessWidget {
         return <PopupMenuEntry<String>>[
           PopupMenuItem<String>(
             value: 'logout',
-            child: Center(child: Text('تسجيل خروج')),
             textStyle: TextStyle(
               color: Colors.black,
               fontSize: 15.sp,
               fontWeight: FontWeight.bold,
             ),
+            child: const Center(child: Text('تسجيل خروج')),
           ),
           PopupMenuItem<String>(
             value: 'profile',
-            child: Center(child: Text('بيانات الحساب')),
             textStyle: TextStyle(
               color: Colors.black,
               fontSize: 15.sp,
               fontWeight: FontWeight.bold,
             ),
+            child: const Center(child: Text('بيانات الحساب')),
           ),
         ];
       },
@@ -55,7 +55,7 @@ class LogoutAvatar extends StatelessWidget {
               )
             : CircleAvatar(
                 backgroundColor: Colors.grey.shade300,
-                backgroundImage: AssetImage(Assets.imagesPerson1),
+                backgroundImage: const AssetImage(Assets.imagesPerson1),
               );
       }),
     );

@@ -7,13 +7,15 @@ import 'package:sezon_app/app/modules/user_profile/views/widgets/user_input.widg
 
 
 class UserProfileView extends GetView<UserProfileController> {
+  const UserProfileView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black,
           size: 30,
         ),

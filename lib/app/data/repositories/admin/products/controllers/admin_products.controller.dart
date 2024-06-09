@@ -148,23 +148,23 @@ class AdminProductsController extends GetxController {
   }
 
   final categoryItems = [
-    DropdownMenuItem<String>(
+    const DropdownMenuItem<String>(
       value: 'accessories',
       child: Text('اكسسوارات'),
     ),
-    DropdownMenuItem<String>(
+    const DropdownMenuItem<String>(
       value: 'wooden',
       child: Text('خشبيات'),
     ),
-    DropdownMenuItem<String>(
+    const DropdownMenuItem<String>(
       value: 'embroideries',
       child: Text('المطرزات'),
     ),
-    DropdownMenuItem<String>(
+    const DropdownMenuItem<String>(
       value: 'porcelain',
       child: Text('الخزف'),
     ),
-    DropdownMenuItem<String>(
+    const DropdownMenuItem<String>(
       value: 'wreaths',
       child: Text('الأكاليل'),
     ),
